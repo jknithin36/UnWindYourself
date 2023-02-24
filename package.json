@@ -1,0 +1,42 @@
+{
+  "name": "unwindyourself",
+  "version": "1.0.0",
+  "description": "a mern stack application",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "start:prod": "NODE_ENV=production nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jknithin36/UnWindYourself.git"
+  },
+  "author": "JK NITHIN KUMAR",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jknithin36/UnWindYourself/issues"
+  },
+  "homepage": "https://github.com/jknithin36/UnWindYourself#readme",
+  "dependencies": {
+    "dotenv": "^7.0.0",
+    "express": "^4.16.4",
+    "mongoose": "^5.13.16",
+    "morgan": "^1.9.1",
+    "nodemon": "^2.0.20"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-react": "^7.12.4",
+    "prettier": "^1.17.0"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  }
+}

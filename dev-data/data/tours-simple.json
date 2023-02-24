@@ -1,0 +1,58 @@
+[
+  {
+    "name": "The Devotional Journey",
+    "duration": 5,
+    "maxGroupSize": 30,
+    "difficulty": "easy",
+    "ratingsAverage": 4.7,
+    "ratingsQuantity": 37,
+    "price": 497,
+    "summary": "Breathtaking Journey Starts from Tirupathi , Andhra Pradesh",
+    "description": "India can be rightly called the Land of Faith. Trudge through the mighty mountains   and you shall experience divine presence or traverse through the meandering alleys, where spirituality combined with history waits to quench your spiritual thirst.",
+    "imageCover": "tour-1-cover.jpg",
+    "images": ["tour-1-1.jpg", "tour-1-2.jpg", "tour-1-3.jpg"],
+    "startDates": ["2024-04-25,10:00", "2024-07-20,10:00", "2024-10-05,10:00"]
+  },
+  {
+    "name": "The Water Explorer",
+    "duration": 7,
+    "maxGroupSize": 20,
+    "difficulty": "medium",
+    "ratingsAverage": 4.6,
+    "ratingsQuantity": 63,
+    "price": 999,
+    "summary": "Exploring the independent island country in the north-central Indian Ocean",
+    "description": "The islands extend more than 510 miles (820 km) from north to south and 80 miles (130 km) from east to west. The northernmost atoll is about 370 miles (600 km) south-southwest of the Indian mainland, and the central area, including the capital island of Male (Male’), is about 400 miles (645 km) southwest of Sri Lanka.",
+    "imageCover": "tour-2-cover.jpg",
+    "images": ["tour-2-1.jpg", "tour-2-2.jpg", "tour-2-3.jpg"],
+    "startDates": ["2024-06-19,10:00", "2024-07-20,10:00", "2024-08-18,10:00"]
+  },
+  {
+    "name": "The Snow Venture",
+    "duration": 8,
+    "maxGroupSize": 13,
+    "difficulty": "difficult",
+    "ratingsAverage": 4.6,
+    "ratingsQuantity": 24,
+    "price": 899,
+    "summary": "A gift of the Himalayas to the world with Exciting adventure in the snow with snowboarding and Trekking",
+    "description": "A mecca for adventure sports enthusiasts, Manali is situated at 6,398 ft in the Himalayas. Located in the Kullu district of Himachal Pradesh, its snow covered peaks make it a popular honeymoon destination. Considered the twin town of Kullu, Manali’s scenic beauty, history and culture give it the sobriquet of the Valley of the Gods. When hippies flocked the city in the ’60s and ’70s in pursuit of their utopian dream, Manali became very popular in the west.",
+    "imageCover": "tour-3-cover.jpg",
+    "images": ["tour-3-1.jpg", "tour-3-2.jpg", "tour-3-3.jpg"],
+    "startDates": ["2024-01-05,10:00", "2024-02-12,10:00", "2024-01-06,10:00"]
+  },
+  {
+    "name": "The Beach Paradise",
+    "duration": 9,
+    "maxGroupSize": 32,
+    "difficulty": "easy",
+    "ratingsAverage": 4.9,
+    "ratingsQuantity": 103,
+    "price": 689,
+    "summary": "Living the life ? Physically at home, mentally in Goa.",
+    "description": "Sandy beaches, estuaries, and promontories characterize the 65-mile (105-km) coastline of mainland Goa. In the interior region, low, forested plateaus merge with the wooded slopes of the Western Ghats, which rise to nearly 4,000 feet (1,220 metres) on the eastern edge of the state. The two largest rivers are the Mandavi and the Zuvari, between the mouths of which lies the island of Goa (Ilhas). The island is triangular, the apex (called the cape) being a rocky headland separating the harbour of Goa into two anchorages!",
+    "imageCover": "tour-4-cover.jpg",
+    "images": ["tour-4-1.jpg", "tour-4-2.jpg", "tour-4-3.jpg"],
+    "startDates": ["2024-03-11,10:00", "2024-05-02,10:00", "2024-06-09,10:00"]
+  }
+]
