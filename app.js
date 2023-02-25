@@ -1,5 +1,10 @@
 const express = require('express');
 const morgan = require('morgan');
+const rateLimit = require('express-rate-limit');
+const helmet = require('helmet');
+const mongooseSanitize = require('express-mongo-sanitize');
+const xss = require('xss-clean');
+const hpp = require('hpp');
 
 const AppError = require('./utils/appError');
 const globalErrorHandler = require('./controllers/errorController');
@@ -8,15 +13,44 @@ const tourRouter = require('./routes/tourRoutes');
 const userRouter = require('./routes/userRoutes');
 
 const app = express();
-
+//GLOBAL MIDDLEWARES
+//SECURITY HTTP HEADERS
+app.use(helmet());
+//DEVELOPMENT LOGGING
 console.log(process.env.NODE_ENV);
 if (process.env.NODE_ENV === 'development') {
   app.use(morgan('dev'));
 }
+//LIMIT REQUEST FROM SAME API
+const limiter = rateLimit({
+  max: 100,
+  window: 60 * 60 * 1000,
+  message: 'Too Many Request From the Ip, please again after one hour'
+});
 
-app.use(express.json());
+app.use('/api', limiter);
+//BODY PARSERS GET BODY INFORMATION INTO REQUEST.body
+app.use(express.json({ limit: '10kb' }));
+//DATA__SANITATION AGINAST NO_SQL query injection
+app.use(mongooseSanitize());
+//DATA__SANITIZATION AGINAST XSS
+app.use(xss());
+//PREVENT PARAMETER POLLUTION
+app.use(
+  hpp({
+    whitelist: [
+      'duration',
+      'ratingsQuantity',
+      'ratingsAverage',
+      'maxGroupSize',
+      'difficulty',
+      'price'
+    ]
+  })
+);
 app.use(express.static(`${__dirname}/public`));
 
+//TEST MIDDLEWARE
 app.use((req, res, next) => {
   req.requestTime = new Date().toISOString();
   // console.log(req.headers);
