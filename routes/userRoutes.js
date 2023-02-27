@@ -10,13 +10,18 @@ router.post('/signup', authController.signup);
 router.post('/login', authController.login);
 router.post('/forgotPassword', authController.forgotPassword);
 router.patch('/resetPassword/:token', authController.resetPassword);
-router.patch(
-  '/updateMyPassword',
-  authController.protect,
-  authController.updatePassword
-);
-router.patch('/updateMe', authController.protect, userController.updateMe);
-router.delete('/deleteMe', authController.protect, userController.deleteMe);
+//NO AUTH FOR UPPER ROUTES
+
+///**********############# */
+router.use(authController.protect);
+//THIS MIDDLE WARE WORKS FOE NEXT ALL ROUTES
+
+router.patch('/updateMyPassword', authController.updatePassword);
+router.get('/me', userController.getMe, userController.getUser);
+router.patch('/updateMe', userController.updateMe);
+router.delete('/deleteMe', userController.deleteMe);
+//ONLY FOR ADMIN
+router.use(authController.restrictTo('admin'));
 router
   .route('/')
   .get(userController.getAllusers)
@@ -25,7 +30,7 @@ router
 router
   .route('/:id')
   .get(userController.getUser)
-  .patch(userController.UpdateUser)
+  .patch(userController.updateUser)
   .delete(userController.deleteUser);
 
 module.exports = router;

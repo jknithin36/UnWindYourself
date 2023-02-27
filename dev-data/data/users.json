@@ -1,7 +1,7 @@
 [
   {
     "_id": "5c8a1d5b0190b214360dc057",
-    "name": "Jonas Schmedtmann",
+    "name": "JK NITHIN KUMAR",
     "email": "admin@natours.io",
     "role": "admin",
     "active": true,
@@ -10,8 +10,8 @@
   },
   {
     "_id": "5c8a1dfa2f8fb814b56fa181",
-    "name": "Lourdes Browning",
-    "email": "loulou@example.com",
+    "name": "JK SHIVA PRASRD",
+    "email": "jknithin6029@gmail.com",
     "role": "user",
     "active": true,
     "photo": "user-2.jpg",
@@ -37,8 +37,8 @@
   },
   {
     "_id": "5c8a1f292f8fb814b56fa184",
-    "name": "Leo Gillespie",
-    "email": "leo@example.com",
+    "name": "Megashyam",
+    "email": "jknithin36@gmail.com",
     "role": "guide",
     "active": true,
     "photo": "user-5.jpg",
@@ -82,8 +82,8 @@
   },
   {
     "_id": "5c8a21d02f8fb814b56fa189",
-    "name": "Steve T. Scaife",
-    "email": "steve@example.com",
+    "name": "Abhinav",
+    "email": "jknithin9332@gmail.com",
     "role": "lead-guide",
     "active": true,
     "photo": "user-10.jpg",
