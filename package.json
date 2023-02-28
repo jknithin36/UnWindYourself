@@ -3,9 +3,14 @@
   "version": "1.0.0",
   "description": "a mern stack application",
   "main": "app.js",
+  "targets": {
+    "main": false
+  },
   "scripts": {
     "start": "nodemon server.js",
-    "start:prod": "NODE_ENV=production nodemon server.js"
+    "start:prod": "NODE_ENV=production nodemon server.js",
+    "build": "parcel build ./public/js/index.js --dist-dir ./public/js/bundled",
+    "watch:js": "parcel watch ./public/js/index.js --dist-dir ./public/js/bundled"
   },
   "repository": {
     "type": "git",
